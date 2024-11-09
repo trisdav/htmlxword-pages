@@ -1,0 +1,1548 @@
+<head><meta charset="UTF-8">
+</head><body><h1 class="title">1 Samuel Chapter 20</h1>
+    <style>
+.character {
+    width: 2ch;
+    height: 2ch;
+    text-align: center;
+    font-size: 24pt;
+    padding: 0px 0px 0px 0px;
+    border: 1px solid #000;
+    margin: 0px;
+}
+.input-container {
+    position: relative;
+}
+.superscript-number {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    font-size: 12pt;
+    color: black;
+}
+.block {
+    width: 2ch;
+    height: 2ch;
+    font-size: 24pt;
+    padding: 0px 0px 0px 0px;
+    background:black;
+    border: 1px solid #000;
+    margin:0px;
+}
+.crosswordTable, th, td {
+    display: table;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    border-collapse:collapse;
+    border-spacing: 0px;   
+}
+.crosswordTable, tr {
+    display: table-row;
+}
+.crosswordTable, td {
+    display: table-cell;
+}
+.clueList {
+    list-style-type: none;
+}
+.crosswordContainer {
+    height: 100%;
+    padding: 0;
+    margin: auto;
+    display: flex;
+}
+.rightDiv {
+    padding-left:10px;
+    width: 100%;
+    height: 100%;
+    min-width: 25%;
+}
+.clueDiv {
+    overflow-y: auto;
+    font-size:14pt;
+}
+.clueListHeading {
+    padding: 0px;
+    margin: 0px;
+}
+.title {
+    text-align: center;
+}
+.hintHighlight {
+    background-color: #ebb215
+}
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+.overlayTextWin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 1);
+    border-style:double;
+    border-color: black;
+    padding: 1%;
+    box-shadow: 0px 0px 50px #fff;
+}
+.overlayText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 1);
+    border-style:double;
+    border-color: black;
+    padding: 1%;
+}
+.hintText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 1);
+    border-style:double;
+    border-color: black;
+    padding: 1%;
+}
+.hintStyle {
+    color: rgb(6, 58, 156);
+}
+
+@media (max-width: 900px) {
+    .crosswordContainer {
+        flex-direction: column;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .character {
+        background-color: #28272a;
+        border-color: #687377;
+        color: #f3f3f3;
+    }
+    .hintHighlight {
+        background-color: #252d99;
+    }
+    .superscript-number {
+        color: #f3f3f3;
+    }
+    .block {
+        background-color: #687377;
+        border-color: #687377;
+    }
+    body {
+        background-color: #28272a;
+        color: #f3f3f3;
+    }
+    body a {
+        color: #809fff;
+    }
+    .overlayTextWin {
+        background-color: rgba(0, 0, 0, 1);
+        border-color: dimgray;
+    }
+    .overlayText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 1);
+        border-style:double;
+        border-color: dimgray;
+        padding: 1%;
+    }
+    .hintText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 1);
+        border-style:double;
+        border-color: dimgray;
+        padding: 1%;
+    }
+    .hintStyle {
+        color: rgb(163, 129, 255);
+    }
+    button {
+        background-color: #687377;
+        border-color: cornflowerblue;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+@media print {
+    .input-container {
+        border: 2px solid #000;
+        color: black;
+    }
+    .rightDiv {
+        display: flex;
+        justify-content: center;
+    }
+    .clueDiv {
+        display: inline-block;
+    }
+    .clueList {
+        display: inline-block;
+        margin: 12pt;
+    }
+    .crosswordContainer {
+        flex-direction: column;
+        align-items: top;
+    }
+    button {
+        display: none;
+    }
+    .block {
+        display: hidden;
+        border: none;
+    }
+}
+
+    </style>
+    
+    <div class="crosswordContainer">
+        <div class="crosswordDiv">
+            <table id="crosswordTable" class="crosswordTable">
+
+		<tbody><tr>
+<td row="0" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="5">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="6">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="7">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="8">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="9">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="0" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="1" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="5">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="6">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="7">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="8">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="9">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="1" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="2" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="5">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="6">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="7">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="8">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="9">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="2" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="3" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="3" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="3" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="3" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="3" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="3" column="5">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="3" column="6">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="3" column="7">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="3" column="8">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="3" column="9">
+    <div class="input-container">
+        <sup class="superscript-number">1</sup>
+        <input row="3" column="9" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="3" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="3" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="3" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="3" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="3" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="3" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="3" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="4" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="4" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="4" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="4" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="4" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="4" column="5">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="4" column="6">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="4" column="7">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="4" column="8">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="4" column="9">
+    <div class="input-container">
+        
+        <input row="4" column="9" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="4" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="4" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="4" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="4" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="4" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="4" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="4" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="5" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="5" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="5" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="5" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="5" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="5" column="5">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="5" column="6">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="5" column="7">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="5" column="8">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="5" column="9">
+    <div class="input-container">
+        
+        <input row="5" column="9" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="5" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="5" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="5" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="5" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="5" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="5" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="5" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="6" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="6" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="6" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="6" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="6" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="6" column="5">
+    <div class="input-container">
+        <sup class="superscript-number">2</sup>
+        <input row="6" column="5" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="6" column="6">
+    <div class="input-container">
+        
+        <input row="6" column="6" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="6" column="7">
+    <div class="input-container">
+        <sup class="superscript-number">3</sup>
+        <input row="6" column="7" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="6" column="8">
+    <div class="input-container">
+        
+        <input row="6" column="8" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="6" column="9">
+    <div class="input-container">
+        
+        <input row="6" column="9" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="6" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="6" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="6" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="6" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="6" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="6" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="6" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="7" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="7" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="7" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="7" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="7" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="7" column="5">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="7" column="6">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="7" column="7">
+    <div class="input-container">
+        
+        <input row="7" column="7" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="7" column="8">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="7" column="9">
+    <div class="input-container">
+        
+        <input row="7" column="9" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="7" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="7" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="7" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="7" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="7" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="7" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="7" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="8" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="8" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="8" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="8" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="8" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="8" column="5">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="8" column="6">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="8" column="7">
+    <div class="input-container">
+        
+        <input row="8" column="7" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="8" column="8">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="8" column="9">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="8" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="8" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="8" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="8" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="8" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="8" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="8" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="9" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="9" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="9" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="9" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="9" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="9" column="5">
+    <div class="input-container">
+        <sup class="superscript-number">4</sup>
+        <input row="9" column="5" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="9" column="6">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="9" column="7">
+    <div class="input-container">
+        
+        <input row="9" column="7" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="9" column="8">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="9" column="9">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="9" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="9" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="9" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="9" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="9" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="9" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="9" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="10" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="10" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="10" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="10" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="10" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="10" column="5">
+    <div class="input-container">
+        
+        <input row="10" column="5" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="10" column="6">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="10" column="7">
+    <div class="input-container">
+        
+        <input row="10" column="7" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="10" column="8">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="10" column="9">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="10" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="10" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="10" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="10" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="10" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="10" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="10" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="11" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="11" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="11" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="11" column="3">
+    <div class="input-container">
+        <sup class="superscript-number">5</sup>
+        <input row="11" column="3" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="11" column="4">
+    <div class="input-container">
+        
+        <input row="11" column="4" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="11" column="5">
+    <div class="input-container">
+        
+        <input row="11" column="5" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="11" column="6">
+    <div class="input-container">
+        
+        <input row="11" column="6" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="11" column="7">
+    <div class="input-container">
+        
+        <input row="11" column="7" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="11" column="8">
+    <div class="input-container">
+        
+        <input row="11" column="8" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="11" column="9">
+    <div class="input-container">
+        
+        <input row="11" column="9" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="11" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="11" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="11" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="11" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="11" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="11" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="11" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="12" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="12" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="12" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="12" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="12" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="12" column="5">
+    <div class="input-container">
+        
+        <input row="12" column="5" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="12" column="6">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="12" column="7">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="12" column="8">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="12" column="9">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="12" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="12" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="12" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="12" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="12" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="12" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="12" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="13" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="13" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="13" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="13" column="3">
+    <div class="input-container">
+        <sup class="superscript-number">6</sup>
+        <input row="13" column="3" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="13" column="4">
+    <div class="input-container">
+        
+        <input row="13" column="4" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="13" column="5">
+    <div class="input-container">
+        
+        <input row="13" column="5" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="13" column="6">
+    <div class="input-container">
+        
+        <input row="13" column="6" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="13" column="7">
+    <div class="input-container">
+        
+        <input row="13" column="7" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="13" column="8">
+    <div class="input-container">
+        
+        <input row="13" column="8" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="13" column="9">
+    <div class="input-container">
+        
+        <input row="13" column="9" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="13" column="10">
+    <div class="input-container">
+        
+        <input row="13" column="10" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="13" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="13" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="13" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="13" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="13" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="13" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="14" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="14" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="14" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="14" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="14" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="14" column="5">
+    <div class="input-container">
+        
+        <input row="14" column="5" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="14" column="6">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="14" column="7">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="14" column="8">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="14" column="9">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="14" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="14" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="14" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="14" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="14" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="14" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="14" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="15" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="15" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="15" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="15" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="15" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="15" column="5">
+    <div class="input-container">
+        <sup class="superscript-number">7</sup>
+        <input row="15" column="5" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="15" column="6">
+    <div class="input-container">
+        
+        <input row="15" column="6" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="15" column="7">
+    <div class="input-container">
+        
+        <input row="15" column="7" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="15" column="8">
+    <div class="input-container">
+        
+        <input row="15" column="8" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="15" column="9">
+    <div class="input-container">
+        
+        <input row="15" column="9" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td class="input-block" row="15" column="10">
+    <div class="input-container">
+        
+        <input row="15" column="10" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="15" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="15" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="15" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="15" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="15" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="15" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+		<tr>
+<td row="16" column="0">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="16" column="1">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="16" column="2">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="16" column="3">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="16" column="4">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td class="input-block" row="16" column="5">
+    <div class="input-container">
+        
+        <input row="16" column="5" class="character" maxlength="1" type="text">
+    <div>
+</div></div></td>
+<td row="16" column="6">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="16" column="7">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="16" column="8">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="16" column="9">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="16" column="10">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="16" column="11">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="16" column="12">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="16" column="13">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="16" column="14">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="16" column="15">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+<td row="16" column="16">
+    <input class="block" maxlength="1" type="text" disabled="">
+</td>
+
+		</tr>
+            </tbody></table>
+        </div>
+        <div id="rightDiv" class="rightDiv" style="max-height: 614px;">
+            <div class="clueDiv">
+		<div class="clueList" id="down">
+			<h3 class="clueListHeading">Down</h3>
+			<li class="hint" direction="down" length="5" row="3" column="9" cluenumber="1">1 As a sign to David, Jonathan said he would fire ____ arrows.</li>
+			<li class="hint" direction="down" length="6" row="6" column="7" cluenumber="3">3 Anointed Saul king of Israel.</li>
+			<li class="hint" direction="down" length="8" row="9" column="5" cluenumber="4">4 Jonathan and David made a _______.</li>
+		</div>		<div class="clueList" id="across">
+			<h3 class="clueListHeading">Across</h3>
+			<li class="hint" direction="across" length="5" row="6" column="5" cluenumber="2">2 Father of king David</li>
+			<li class="hint" direction="across" length="7" row="11" column="3" cluenumber="5">5 What did Saul throw at Jonathan, when Jonathan explained the absence of David. &lt;1 Samuel 20:33&gt;</li>
+			<li class="hint" direction="across" length="8" row="13" column="3" cluenumber="6">6 King Saul's son, friend of David.</li>
+			<li class="hint" direction="across" length="6" row="15" column="5" cluenumber="7">7 Where David was fleeing from to meet Jonathan.</li>
+		</div>
+            </div>
+            <div class="clueDiv">
+                <button onclick="check()">Check</button>
+            </div>
+        </div>
+        <div id="checkOverlay" class="overlay" onclick="noneDisplay('checkOverlay')">
+            <p class="overlayText" id="checkOverlayText"></p>
+        </div>
+    </div>
+    
+    <script>
+        var solution = 'W1siVEhSRUUiLCA1LCAzLCA5LCAiZG93biIsIDFdLCBbIkpFU1NFIiwgNSwgNiwgNSwgImFjcm9zcyIsIDJdLCBbIlNBTVVFTCIsIDYsIDYsIDcsICJkb3duIiwgM10sIFsiQ09WRU5BTlQiLCA4LCA5LCA1LCAiZG93biIsIDRdLCBbIkpBVkVMSU4iLCA3LCAxMSwgMywgImFjcm9zcyIsIDVdLCBbIkpPTkFUSEFOIiwgOCwgMTMsIDMsICJhY3Jvc3MiLCA2XSwgWyJOQUlPVEgiLCA2LCAxNSwgNSwgImFjcm9zcyIsIDddXQ==';
+        var dimCol = 17;
+/*
+     "htmlxword" creates a crossword in html/javascript form a text file.
+    Copyright (C) 2024  Tristan Davis (tridav95@gmail.com)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+var lastCell = -1;
+solLst = JSON.parse(atob(solution));
+function check() {
+    for(let i = 0; i < solLst.length; i++) {
+        word = solLst[i];
+        wordLen = word[1];
+        startRow = word[2]; // not 0 based
+        startCol = word[3];
+
+        if(word[4] == "down") {
+            for (let j = 0; j < wordLen; j++) {
+                row = (startRow + j);
+                selector = "input[row=\"" + row + "\"][column=\"" + startCol + "\"]";
+                inputField = document.querySelector(selector);
+                if (inputField.value.toUpperCase() != word[0][j]) {
+                    document.getElementById("checkOverlayText").textContent = "Something isn't right, try again."
+                    document.getElementById("checkOverlay").style.display = "block";
+                    return;
+                }
+            }
+        }
+        else {
+            for (let j = 0; j < wordLen; j++) {
+                column = (startCol + j);
+                selector = "input[row=\"" + startRow + "\"][column=\"" + column + "\"]";
+                inputField = document.querySelector(selector);
+                if (inputField.value.toUpperCase() != word[0][j]) {
+                    document.getElementById("checkOverlayText").textContent = "Something isn't right, try again."
+                    document.getElementById("checkOverlay").style.display = "block";
+                    return;
+                }
+            }
+        }
+    }
+    // If we make it this far then it didn't fail.
+    document.getElementById("checkOverlayText").textContent = "🎉 You got it! You're awesome. 🎊"
+    document.getElementById("checkOverlayText").className = "overlayTextWin";
+    document.getElementById("checkOverlay").style.display = "block";
+}
+
+function moveToCell(index) {
+    var inputFields = document.querySelectorAll('input.hintHighlight');
+    if ( inputFields.length == 0 ) {
+        guessMove(index);
+    }
+    else {
+        moveToHighlighted(index, inputFields);
+    }
+}
+
+function moveToHighlighted(index, highlightedFields) {
+    var inputFields = document.querySelectorAll('input');
+    for ( var i = 0; i < highlightedFields.length; ++i) {
+        if ( inputFields[index] == highlightedFields[i] ) {
+            if (i + 1 < highlightedFields.length) {
+                highlightedFields[i+1].focus();
+                return;
+            }
+        }
+    }
+}
+
+// This attemps to guess where the next character is.
+function guessMove(index) {
+    var inputFields = document.querySelectorAll('input');
+    var thisCell = index;
+    var newIndex = thisCell + 1;
+    console.log(thisCell);
+    console.log(lastCell);
+
+    // No clue as to which way we are going, go across.
+    if (lastCell == -1) {
+        newIndex = thisCell + 1;
+        if (inputFields[newIndex].attributes["class"].value == "block") {
+            // Only go to this case if it will work, otherwise the selection will
+            //  jump awkwardly.
+            if (inputFields[thisCell + dimCol].attributes["class"].value != "block") {
+                newIndex = thisCell + dimCol;
+            }
+        }
+    }
+
+    // If the last cell was one back, assume we are going across.
+    else if (lastCell == thisCell - 1) {
+        newIndex = thisCell + 1;
+        if (inputFields[newIndex].attributes["class"].value == "block") {
+            // Only go to this case if it will work, otherwise the selection will
+            //  jump awkwardly.
+            if (inputFields[thisCell + dimCol].attributes["class"].value != "block") {
+                newIndex = thisCell + dimCol;
+            }
+        }
+    }
+    else if (lastCell == thisCell - dimCol) { // If the last cell is above, assume we are going down.
+        newIndex = thisCell + dimCol;
+        if (inputFields[newIndex].attributes["class"].value == "block") {
+            newIndex = thisCell + 1;
+        }
+    }
+    // Loop until we find a valid input cell. If selection is valid there will be
+    //  no iterations.
+    while(inputFields[newIndex].attributes["class"].value == "block") {
+        newIndex += 1;
+        if (newIndex > inputFields.length) {
+            newIndex = 0;
+        }
+    }
+    lastCell = thisCell;
+    inputFields[newIndex].focus();
+}
+
+var inputFieldList = document.querySelectorAll('input');
+// Add event listener to each input field
+inputFieldList.forEach(function(input, index) {
+    input.addEventListener('input', function() {
+        moveToCell(index);
+    });
+    // User clicks to change input.
+    input.addEventListener('mousedown', function(event) {
+        lastCell = -1;
+    });
+    // User presses tab to change input
+     input.addEventListener('keydown', function(event) {
+        if (event.key === 'Tab') {
+            lastCell = -1;
+        }
+    });
+    // When focused on a cell, select all existing text.
+    input.addEventListener('focus', function(event) {
+        this.select();
+    });
+});
+
+function setClueDivMaxHeight() {
+    height = document.getElementById("crosswordTable").offsetHeight;
+    document.getElementById("rightDiv").style.maxHeight = height;
+}
+setClueDivMaxHeight();
+
+function removeHintHighlight(event) {
+    var hintList = document.querySelectorAll('li.hint');
+    hintList.forEach(hint => {
+        if (!event.target.closest(".hint")) {
+            hint.classList.remove(".hintHighlight");
+        }
+    });
+}
+
+document.addEventListener("click", function(event) {
+    var hintList = document.querySelectorAll('.hint');
+    hintList.forEach(hint => {
+        // If the item clicked on is not of the class hint, then
+        //  something that isn't a hint has been clicked and so
+        //  the hintHighlight class should be removed.
+        if (!event.target.closest('.hint') && !event.target.closest('.character')) { 
+            hint.classList.remove("hintHighlight");
+            deHighlight();
+        }
+    }); 
+});
+
+function hintListHighlightListeners() {
+    // Highlight for hint strings
+    var hintList = document.querySelectorAll('.hint');
+    hintList.forEach(hint => {
+        hint.addEventListener('click', function(event) {
+             hintList.forEach( li => {
+                if( li !== hint) {
+                    li.classList.remove("hintHighlight")
+                }
+            });
+            hint.classList.add("hintHighlight");
+            highlightRange(hint.getAttribute("direction"), hint.getAttribute("row"), hint.getAttribute("column"), hint.getAttribute("length"));
+        });
+    });
+}
+hintListHighlightListeners();
+
+// This is that first box which has the super script indicating the start of a word.
+function firstLetterHighlightListeners() {
+    var firstLetterInputs = document.querySelectorAll("div.input-container");
+    firstLetterInputs.forEach( input => {
+        input.addEventListener("click", function(event) {
+            var superscriptHtml = input.getElementsByClassName("superscript-number");
+            var superscript = NaN;
+            if (superscriptHtml.length > 0) {
+                superscript = Number(superscriptHtml[0].innerHTML);
+            }
+            var hints = document.querySelectorAll("li.hint");
+            for (var i = 0; i < hints.length; ++i) {
+                if (hints[i].getAttribute("clueNumber") == superscript && ! hints[i].classList.contains("hintHighlight")) {
+                    // use the click event of the hint to highlight things.
+                    var clickEvent = new MouseEvent("click", {
+                        bubbles: true,
+                        cancelable: true,
+                        view: window
+                      });
+                    hints[i].dispatchEvent(clickEvent);
+                    return; // Exit the loop.
+                }
+            }
+        });
+    });
+}
+firstLetterHighlightListeners();
+
+function highlightRange(direction, row, col, len) {
+    var inputFieldList = document.querySelectorAll('input');
+    var startIndex = (Number(row) * Number(dimCol)) + Number(col);
+    var wordLength = Number(len);
+    deHighlight();
+    if (direction == "down") {
+        for(var i = 0; i < wordLength; ++i) {
+            index = startIndex + (dimCol * i);
+            inputFieldList[index].classList.add("hintHighlight");
+        }
+    }
+    else {
+        for(var i = 0; i < wordLength; ++i) {
+            index = startIndex + i;
+            inputFieldList[index].classList.add("hintHighlight");
+        }
+    }
+    inputFieldList[startIndex].focus();
+    inputFieldList[startIndex].select();
+}
+
+function deHighlight() {
+    var inputFieldList = document.querySelectorAll('input');
+    for(var i = 0; i < inputFieldList.length; ++i) {
+        inputFieldList[i].classList.remove("hintHighlight");
+    }
+}
+
+function noneDisplay(elementId) {
+    document.getElementById(elementId).style.display = "none";
+}
+
+function setDisplay(elementId, display="block") {
+    document.getElementById(elementId).style.display = display;
+}
+    </script>
+</body>
