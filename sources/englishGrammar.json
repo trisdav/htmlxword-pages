@@ -1,0 +1,34 @@
+[
+    {
+      "word": "Noun",
+      "clue": "Person, place, or thing.",
+      "hintTitle": "Hint",
+      "hint": "English 101"
+    },
+    {
+      "word": "adverb",
+      "clue": "A word or phrase that modifies or qualifies an adjective."
+    },
+    {
+      "word": "present",
+      "clue": "Verb ending with -ing",
+      "with": 4
+    },
+    {
+      "word": "participle",
+      "clue": "Verb ending with -ing",
+      "with": 3
+    },
+    {
+      "word": "adjective",
+      "clue": "A word or phrase describing an attribute."
+    },
+    {
+      "word": "paragraph",
+      "clue": "A section of a piece of writing."
+    },
+    {
+      "word": "chapter",
+      "clue": "A section marker in a book."
+    }
+]

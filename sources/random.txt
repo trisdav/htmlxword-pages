@@ -1,0 +1,11 @@
+socrates A classical Greek philosopher credited as one of the founders of Western philosophy.
+python A high-level programming language known for its readability and versatility.
+shakespeare An English playwright and poet, widely regarded as the greatest writer in the English language.
+mountain A large natural elevation of the earth's surface rising abruptly from the surrounding level; a large steep hill.
+tesla An American electric vehicle and clean energy company founded by Elon Musk.
+yoga A group of physical, mental, and spiritual practices that originated in ancient India.
+Across
+einstein A theoretical physicist known for the theory of relativity and the equation E=mc².
+saturn The sixth planet from the Sun, known for its prominent ring system.
+ocean A vast body of saltwater that covers almost three-quarters of the Earth's surface.
+jazz A music genre that originated in African-American communities in the early 20th century.
